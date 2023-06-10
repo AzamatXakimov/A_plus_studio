@@ -1,0 +1,46 @@
+.site-header {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+  }
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+  }
+  &__btn {
+    font-family: "Averta Demo PE Cutted Demo";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #ffffff;
+    background-color: #2639ed;
+    border-radius: 60px;
+    padding: 20px 40px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
