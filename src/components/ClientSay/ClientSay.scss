@@ -1,0 +1,194 @@
+.client-say {
+    margin-bottom: 92px;
+
+    & .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 0;
+        left: 67px;
+        text-align: start;
+    }
+
+    & .swiper-pagination-bullet {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #e7f0fc;
+        opacity: 1;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin-right: 26px;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: #2639ed;
+    }
+
+    background-image: url("../../assets/images/client-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 480px) calc(50% + 100px);
+}
+
+.client-say-title {
+    margin-top: 0;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.client-say-desc {
+    margin-top: 0;
+    margin-bottom: 113px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    
+    color: #757575;    
+}
+
+.client-say-inner {
+    display: flex;
+    align-items: center;
+}
+
+.client-say-img-box {
+    position: relative;
+    &::before {
+        position: absolute;
+        bottom: 10px;
+        left: -20px;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        background-image: url("../../assets/images/clients-circle.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        content: "";
+    }
+    &::after {
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        display: inline-block;
+        width: 196px;
+        height: 154px;
+        background-image: url("../../assets/images/clients-dots.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        content: "";
+    }
+}
+
+.client-say-card-img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 389px;
+    height: auto;
+    // filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+    border-radius: 500px 0px 500px 500px;
+}
+
+
+
+.client-say-card-box {
+    max-width: 479px;
+    width: 100%;
+
+}
+
+.client-say-card-textbox {
+    width: 100%;
+    padding-left: 67px;
+}
+
+.client-say-card-title {
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.client-say-card-desc {
+    margin-top: 0;
+    margin-bottom: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .client-say {
+        background-position: calc(50% + 350px) calc(50% + -100px);
+        background-size: 230px auto;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .client-say {
+        background-position: calc(50% + 280px) calc(50% - 30px);
+        background-size: 180px auto;
+    }
+    .client-say-img-box {
+        position: relative;
+        &::before {
+            bottom: 10px;
+            left: -20px;
+            width: 80px;
+            height: 80px;
+        }
+        &::after {
+            top: -40px;
+            right: -40px;
+            width: 150px;
+            height: 134px;
+        }
+    }
+    .client-say-card-img {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 200px;
+        height: auto;
+        // filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+        border-radius: 500px 0px 500px 500px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .client-say-card-box {
+        max-width: 300px;
+    }
+    
+    .client-say-card-textbox {
+        padding-left: 20px;
+    }
+
+    .client-say {
+        & .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            left: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .client-say {
+        background-image: none;
+    }
+    .client-say-inner {
+        flex-direction: column;
+    }
+    .client-say-img-box {
+        margin-bottom: 25px;
+    }
+}
