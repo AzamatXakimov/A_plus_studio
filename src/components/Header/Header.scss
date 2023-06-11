@@ -1,46 +1,76 @@
-.site-header {
+.header {
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 40px 0;
   }
   &__list {
     display: flex;
     align-items: center;
     gap: 60px;
-    list-style: none;
   }
   &__item {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.01em;
+    a {
+      color: #000000;
+    }
+    &:hover {
+      font-weight: bold;
+    }
+    &:active {
+      text-decoration: underline;
+    }
   }
-  &__title {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 49px;
-  }
-  &__desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: #565656;
-  }
-  &__btn {
-    font-family: "Averta Demo PE Cutted Demo";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.065em;
-    color: #ffffff;
-    background-color: #2639ed;
-    border-radius: 60px;
-    padding: 20px 40px;
+  &__menu {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+    display: none;
   }
 }
-a {
-  text-decoration: none;
-  color: #000000;
+
+@media only screen and (max-width: 900px) {
+  .header {
+    &__menu {
+      display: block;
+      visibility: visible;
+    }
+    &__list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 32px;
+      background-color: #eeeeee;
+      transform: translateY(-100vh);
+      transition: all ease 1s;
+    }
+    &__item {
+      font-size: 24px;
+    }
+    &__close-btn {
+      position: absolute;
+      top: 35px;
+      right: 25px;
+      font-size: 30px;
+      color: darkred;
+    }
+    .responsive_nav {
+      transform: none;
+    }
+  }
 }
