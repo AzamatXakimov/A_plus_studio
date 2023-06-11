@@ -24,7 +24,7 @@ export const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="header__item">
-                <Link to="/">What We Do</Link>
+                <a href="#about_company">What We Do</a>
               </li>
               <li className="header__item">
                 <Link to="/">Service</Link>
@@ -36,7 +36,7 @@ export const Header = () => {
                 <Link to="/">Blog</Link>
               </li>
               <li className="header__item">
-                <Link to="#subscibe_zone">Contact</Link>
+                <a href="#subscibe_zone">Contact</a>
               </li>
               <button
                 className="header__menu header__close-btn"

@@ -7,7 +7,7 @@ export const AboutCompany = () => {
 
   return (
     <>
-      <section className="about-company">
+      <section className="about-company" id="about_company">
         <div className="container">
           <div className="about-company-inner">
             <div className="about-company-video-box">
