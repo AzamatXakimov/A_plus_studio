@@ -1,6 +1,9 @@
 .about-company {
     margin-bottom: 117px;
     padding-bottom: 64px;
+    background-image: url("../../assets/images/about-company-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 40px) calc(50% + 20px);
 }
 
 .about-company-inner {
