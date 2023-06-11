@@ -1,50 +1,57 @@
 /* ROOT */
-:root{
-    --main-font-family: "Averta Demo PE Cutted Demo", "Arial", sans-serif;
-    --main-font-weight: 400; 
-    --main-body-bg-color: #fff;
+:root {
+  --main-font-family: "Averta Demo PE Cutted Demo", "Arial", sans-serif;
+  --main-font-weight: 400;
+  --main-body-bg-color: #fff;
 }
 
 @font-face {
-    font-display: swap; 
-    font-family: 'Averta Demo PE Cutted Demo';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff2') format('woff2');
-    src: url('../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff') format('woff');
+  font-display: swap;
+  font-family: "Averta Demo PE Cutted Demo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff2") format("woff2");
+  src: url("../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff") format("woff");
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-img{
-    display: block;
-    height: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  background-color: var(--main-body-bg-color);
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
-    font-family: var(--main-font-family);
-    font-weight: var(--main-font-weight);
-    background-color: var(--main-body-bg-color);
+img {
+  display: flex;
 }
 
-.container{
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 20px;
+ul {
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-.site-main{
-    flex-grow: 1;
+.site-main {
+  flex-grow: 1;
 }

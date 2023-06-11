@@ -1,0 +1,124 @@
+.hero {
+  background-image: url(../../assets/images/hero-img.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 350px) calc(50% + 0px);
+  // background-position: right;
+  padding: 172px 0;
+  margin-bottom: 40px;
+  &__texts {
+    position: relative;
+    bottom: 60px;
+    width: 470px;
+    &::before {
+      position: absolute;
+      bottom: -117px;
+      left: -53px;
+      width: 404px;
+      height: 154px;
+      background-image: url("../../assets/images/hero-dots.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+      content: "";
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+    margin: 36px 0;
+  }
+  &__btn {
+    font-family: "Averta Demo PE Cutted Demo";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #ffffff;
+    background-color: #2639ed;
+    border: none;
+    border-radius: 60px;
+    padding: 20px 40px;
+    cursor: pointer;
+    &:hover {
+      background-color: #001aff;
+    }
+    &:active {
+      box-shadow: 1px 1px 10px #001aff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .hero {
+    &__desc {
+      font-weight: bold;
+      color: rgb(33, 33, 33);
+    }
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .hero {
+    background-position: calc(50% + 150px) calc(50% + 0px);
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero {
+    padding: 150px 0 170px;
+    &__texts {
+      width: 395px;
+    }
+    &__title {
+      font-size: 33px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero {
+    &__texts {
+      width: 375px;
+    }
+    &__title {
+      font-size: 29px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .hero {
+    &__texts {
+      width: 350px;
+    }
+    &__title {
+      font-size: 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .hero {
+    padding: 147px 0;
+    &__texts {
+      width: 300px;
+    }
+    &__title {
+      font-size: 25px;
+    }
+  }
+}

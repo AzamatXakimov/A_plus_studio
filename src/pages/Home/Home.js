@@ -3,34 +3,36 @@ import { ClientSay } from "../../components/ClientSay/ClientSay"
 import { Footer } from "../../components/Footer/Footer"
 import { Header } from "../../components/Header/Header"
 import { HowHelp } from "../../components/HowHelp/HowHelp"
-import { OurClients } from "../../components/OurClients/OurClients"
 import { SubscribeAsside } from "../../components/SubscribeAsside/SubscribeAsside"
+import { Hero } from "../../components/Hero/Hero";
+import { OurClient } from "../../components/OurClient/OurClient"
 
 export const Home = () => {
-    return <>
-        <Header/>
+  return (
+    <>
+      <Header />
 
-        <main className="site-main">
-            {/* HERO  */}
+      <main className="site-main">
+        {/* HERO  */}
+        <Hero />
 
+        {/* 2-SECTION  */}
+        <OurClient />
 
-            {/* 2-SECTION  */}
-            <OurClients/>
+        {/* 3-SECTION  */}
+        <HowHelp/>
+        {/* 4-SECTION  */}
+        <AboutCompany/>
 
-            {/* 3-SECTION  */}
-            <HowHelp/>
+        {/* 5-SECTION  */}
+        <ClientSay/>
 
-            {/* 4-SECTION  */}
-            <AboutCompany/>
+        {/* 6-SECTION  */}
 
-            {/* 5-SECTION  */}
-            <ClientSay/>
+        <SubscribeAsside />
+      </main>
 
-            {/* 6-SECTION  */}
-
-            <SubscribeAsside/>
-        </main>
-
-        <Footer/>
+      <Footer />
     </>
-}
+  );
+};
