@@ -70,14 +70,21 @@
 @media only screen and (max-width: 1150px) {
   .footer {
     &__wrap {
-      flex-direction: column;
-      row-gap: 35px;
+      justify-content: space-evenly;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: auto auto;
     }
   }
 }
 
 @media only screen and (max-width: 770px) {
   .footer {
+    &__wrap {
+      flex-direction: column;
+      row-gap: 35px;
+    }
     &__list {
       display: grid;
       grid-template-columns: auto auto;
@@ -127,7 +134,7 @@
       margin-bottom: 10px;
     }
     &__link {
-      font-size: 9px;
+      font-size: 8px;
     }
   }
 }
