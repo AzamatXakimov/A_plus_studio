@@ -6,6 +6,7 @@ import { HowHelp } from "../../components/HowHelp/HowHelp"
 import { SubscribeAsside } from "../../components/SubscribeAsside/SubscribeAsside"
 import { Hero } from "../../components/Hero/Hero";
 import { OurClient } from "../../components/OurClient/OurClient"
+import { OurProjects } from "../../components/OurProjects/OurProjects"
 
 export const Home = () => {
   return (
@@ -23,6 +24,8 @@ export const Home = () => {
         <HowHelp/>
         {/* 4-SECTION  */}
         <AboutCompany/>
+
+        <OurProjects/>
 
         {/* 5-SECTION  */}
         <ClientSay/>
