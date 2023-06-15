@@ -3,25 +3,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 20px 0;
+  }
+  &__logo {
+    width: 200px;
+    object-fit: cover;
+  }
+  &__select {
+    font-family: "Averta Demo PE Cutted Demo", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-bottom: 2px solid #1a233b;
+    border-radius: 5px;
+    cursor: pointer;
   }
   &__list {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
   }
   &__item {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.01em;
+    padding: 15px 12.5px;
+    border-radius: 20px;
     a {
-      color: #000000;
+      color: #1a233b;
     }
     &:hover {
       font-weight: bold;
+      background-color: #d9e2ff;
     }
     &:active {
-      text-decoration: underline;
+      background-color: #bccaff;
     }
   }
   &__menu {
@@ -54,7 +70,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      row-gap: 32px;
+      row-gap: 16px;
       background-color: #eeeeee;
       transform: translateY(-120vh);
       transition: all ease 1s;

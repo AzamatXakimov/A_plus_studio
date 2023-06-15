@@ -7,6 +7,10 @@
     border-bottom: 2px solid #e4e4e4;
     padding: 60px 0 30px;
   }
+  &__logo {
+    width: 200px;
+    object-fit: cover;
+  }
   &__desc {
     width: 270px;
     font-size: 14px;

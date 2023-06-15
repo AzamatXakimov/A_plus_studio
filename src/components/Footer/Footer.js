@@ -1,21 +1,22 @@
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/Logo.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import "./Footer.scss";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <footer className="footer">
         <div className="container">
           <div className="footer__wrap">
             <div className="footer__box">
-              <img src={Logo} alt="Logo" />
-              <p className="footer__desc">
-                Leading digital agency with solid design and development
-                expertise. We build readymade websites, mobile applications, and
-                elaborate online business services.
-              </p>
+              <Link to="/">
+                <img className="footer__logo" src={Logo} alt="Logo" />
+              </Link>
+              <p className="footer__desc">{t("footer-desc")}</p>
               <div className="footer__socials">
                 <Link to="https://www.facebook.com" target="_blank">
                   <FaFacebookSquare />
@@ -30,7 +31,7 @@ export const Footer = () => {
             </div>
             <ul className="footer__list">
               <li className="footer__item">
-                <h3 className="footer__title">What We Do</h3>
+                <h3 className="footer__title">{t("nav-service")}</h3>
                 <p className="footer__link">Web Design</p>
                 <p className="footer__link">App Design</p>
                 <p className="footer__link">Social Media Manage</p>
@@ -49,9 +50,10 @@ export const Footer = () => {
                 <p className="footer__link">Business</p>
               </li>
               <li className="footer__item">
-                <h3 className="footer__title">Contact</h3>
-                <p className="footer__link">WhatsApp</p>
-                <p className="footer__link">Support 24</p>
+                <h3 className="footer__title">{t("nav-contact")}</h3>
+                <p className="footer__link">Telegram</p>
+                <p className="footer__link">Instagram</p>
+                <p className="footer__link">+998 (99) 777-77-77</p>
               </li>
             </ul>
           </div>
