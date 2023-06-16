@@ -2,7 +2,7 @@ import i18n from "../../language/i18next";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/Logo.svg";
+import Logo from "../../assets/images/logo.svg"
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.scss";
 
