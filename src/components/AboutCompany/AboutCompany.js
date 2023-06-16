@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import AboutCompanyImg from "../../assets/images/about-company-img.jpg";
 import "./AboutCompany.scss";
 
 export const AboutCompany = () => {
   const [videoPlay, setVideoPlay] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -36,18 +39,9 @@ export const AboutCompany = () => {
                 </>
               )}
             </div>
-
             <div className="about-company-textbox">
-              <h2 className="about-company-title">
-                Great Digital Product Agency since 2016
-              </h2>
-              <p className="about-company-desc">
-                Our Business Plan is a written document describing a company's
-                core business activites, Objectives, and how it plans to achieve
-                its goals. Our goal is to provide our client high quality
-                Product with modern idea accordingly their budgets and according
-                thir reuirements.
-              </p>
+              <h2 className="about-company-title">{t("about-title")}</h2>
+              <p className="about-company-desc">{t("about-desc")}</p>
             </div>
           </div>
         </div>

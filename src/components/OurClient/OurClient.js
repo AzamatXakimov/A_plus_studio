@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Google from "../../assets/images/Google-Logo.svg";
 import Airbnb from "../../assets/images/Airbnb-Logo.svg";
@@ -6,16 +7,16 @@ import Amazon from "../../assets/images/Amazon-Logo.svg";
 import "./OurClient.scss";
 
 export const OurClient = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="client">
         <div className="container">
           <div className="client__wrap">
             <div className="client__texts">
-              <h2 className="client__title">Our Client</h2>
-              <p className="client__desc">
-                Several selected clients, who already believe in our service.
-              </p>
+              <h2 className="client__title">{t("client-title")}</h2>
+              <p className="client__desc">{t("client-desc")}</p>
             </div>
             <Link to="https://www.google.com" target="_blank">
               <img className="client__img" src={Google} alt="Google" />

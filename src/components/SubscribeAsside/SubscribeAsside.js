@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import "./SubscribeAsside.scss";
 
 export const SubscribeAsside = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <aside className="subscribe-aside" id="subscibe_zone">
@@ -8,12 +11,9 @@ export const SubscribeAsside = () => {
           <div className="subscribe-inner">
             <div className="subscribe-box">
               <div className="subscribe-textbox">
-                <h2 className="subscribe-title">Subscribe Newsletter</h2>
-                <p className="subscribe-desc">
-                  I will update good news and promotion service not spam
-                </p>
+                <h2 className="subscribe-title">{t("contact-title")}</h2>
+                <p className="subscribe-desc">{t("contact-desc")}</p>
               </div>
-
               <form
                 className="subscribe-form"
                 onSubmit={(evt) => {
@@ -25,7 +25,7 @@ export const SubscribeAsside = () => {
                     className="subscribe-input"
                     type="text"
                     aria-label="Enter your email address"
-                    placeholder="Enter your email address.."
+                    placeholder={t("contact-input")}
                   />
                   <button
                     className="subscribe-btn"
@@ -33,7 +33,7 @@ export const SubscribeAsside = () => {
                     onClick={(evt) => {
                       evt.target.blur();
                     }}>
-                    Contact Now
+                    {t("contact-btn")}
                   </button>
                 </label>
               </form>
