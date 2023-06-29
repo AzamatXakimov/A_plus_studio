@@ -27,11 +27,7 @@ export const Header = () => {
             <Link to="/">
               <img className="header__logo" src={Logo} alt="Logo" />
             </Link>
-            <select className="header__select" onChange={handleChangeLang}>
-              <option value="uz">uz</option>
-              <option value="ru">ru</option>
-              <option value="en">en</option>
-            </select>
+
             <ul className="header__list" ref={ref}>
               <li className="header__item">
                 <Link to="/">{t("nav-home")}</Link>
@@ -57,6 +53,11 @@ export const Header = () => {
                 <FaTimes />
               </button>
             </ul>
+            <select className="header__select" onChange={handleChangeLang}>
+              <option value="uz">uz</option>
+              <option value="ru">ru</option>
+              <option value="en">en</option>
+            </select>
             <button className="header__menu" onClick={showBar}>
               <FaBars />
             </button>
