@@ -30,6 +30,8 @@
   "review-desc": "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
   "contact-title": "Subscribe Newsletter",
   "contact-desc": "I will update good news and promotion service not spam",
-  "contact-input": "Enter your email address...",
+  "contact-name-input": "Enter your name...",
+  "contact-phone-input": "Enter your phone number...",
+  "contact-desc-input": "Explanation...",
   "footer-desc": "Leading digital agency with solid design and development expertise. We build ready made websites, mobile applications, and elaborate online business services."
 }

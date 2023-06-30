@@ -1,6 +1,6 @@
 import i18n from "../../language/i18next";
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg"
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -9,8 +9,12 @@ import "./Header.scss";
 export const Header = () => {
   const { t } = useTranslation();
 
-  const handleChangeLang = (e) => {
-    i18n.changeLanguage(e.target.value);
+  const [languageValue, setLanguageValue] = useState("uz");
+  const [languageSelectIsOpen, setLanguageSelectIsOpen] = useState(false)
+
+  const handleChangeLang = (value) => {
+    setLanguageValue(value)
+    i18n.changeLanguage(value);
   };
 
   const ref = useRef();
@@ -53,11 +57,40 @@ export const Header = () => {
                 <FaTimes />
               </button>
             </ul>
-            <select className="header__select" onChange={handleChangeLang}>
+
+            <div className="header__select-wrapper">
+              <button className="header__select-btn" type="button" onClick={() => {
+                setLanguageSelectIsOpen(!languageSelectIsOpen)
+              }}>
+                {languageValue}
+              </button>
+
+              <div className={`header__select-box ${languageSelectIsOpen ? "header__select-box--active" : ""}`}>
+                <button className="header__select-options" type="button" onClick={() => {
+                  setLanguageSelectIsOpen(false);
+                  handleChangeLang("uz")
+                }}>
+                  uz
+                </button>
+                <button className="header__select-options" type="button" onClick={() => {
+                  setLanguageSelectIsOpen(false);
+                  handleChangeLang("ru")
+                }}>
+                  ru
+                </button>
+                <button className="header__select-options" type="button" onClick={() => {
+                  setLanguageSelectIsOpen(false);
+                  handleChangeLang("en")
+                }}>
+                  en
+                </button>
+              </div>
+            </div>
+            {/* <select className="header__select" onChange={handleChangeLang}>
               <option value="uz">uz</option>
               <option value="ru">ru</option>
               <option value="en">en</option>
-            </select>
+            </select> */}
             <button className="header__menu" onClick={showBar}>
               <FaBars />
             </button>

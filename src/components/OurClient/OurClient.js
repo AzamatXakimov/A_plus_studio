@@ -2,8 +2,9 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Google from "../../assets/images/Google-Logo.svg";
 import Airbnb from "../../assets/images/Airbnb-Logo.svg";
-import UberEats from "../../assets/images/UberEats-Logo.svg";
-import Amazon from "../../assets/images/Amazon-Logo.svg";
+// import UberEats from "../../assets/images/UberEats-Logo.svg";
+import ItParkLogo from "../../assets/images/IT-park-logo.png";
+import SpaceEngeneringLogo from "../../assets/images/space-engeenering.jpg";
 import "./OurClient.scss";
 
 export const OurClient = () => {
@@ -25,10 +26,10 @@ export const OurClient = () => {
               <img className="client__img" src={Airbnb} alt="Airbnb" />
             </Link>
             <Link to="https://www.ubereats.com" target="_blank">
-              <img className="client__img" src={UberEats} alt="UberEats" />
+              <img className="client__img" width="167" src={SpaceEngeneringLogo} alt="Space engineering logo" />
             </Link>
-            <Link to="https://www.amazon.com" target="_blank">
-              <img className="client__img" src={Amazon} alt="Amazon" />
+            <Link to="https://it-park.uz/" target="_blank">
+              <img className="client__img"  width="167" src={ItParkLogo} alt="IT Park" />
             </Link>
           </div>
         </div>
