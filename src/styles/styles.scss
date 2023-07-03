@@ -1,18 +1,35 @@
 /* ROOT */
 :root {
-  --main-font-family: "Averta Demo PE Cutted Demo", "Arial", sans-serif;
+  --main-font-family: "Averta Demo PE Cutted Demo";
   --main-font-weight: 400;
   --main-body-bg-color: #fff;
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Averta Demo PE Cutted Demo";
+  font-family: 'Averta Demo PE Cutted Demo';
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff2") format("woff2");
-  src: url("../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff") format("woff");
+  src: url('../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff2') format('woff2'); 
+  src: url('../assets/fonts/Averta-Demo-PE-Cutted-Demo.woff') format('woff'); 
 }
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Sulphur Point';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../assets/fonts/sulphur-point-v15-latin-regular.woff2') format('woff2'); 
+// }
+
+// @font-face {
+//   font-display: swap; 
+//   font-family: 'Coiny';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../assets/fonts/coiny-v16-latin-regular.woff') format('woff'); 
+//   src: url('../assets/fonts/coiny-v16-latin-regular.woff2') format('woff2'); 
+// }
 
 * {
   box-sizing: border-box;

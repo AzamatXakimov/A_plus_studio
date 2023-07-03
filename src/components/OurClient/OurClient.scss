@@ -2,13 +2,14 @@
   &__wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 100px;
   }
   &__texts {
     display: flex;
     flex-direction: column;
     row-gap: 17px;
+    margin-right: 60px;
   }
   &__title {
     font-weight: bold;
@@ -20,6 +21,14 @@
     font-size: 18px;
     line-height: 160%;
     color: #757575;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
   }
 }
 

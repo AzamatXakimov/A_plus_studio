@@ -8,8 +8,8 @@ import "./Header.scss";
 
 export const Header = () => {
   const { t } = useTranslation();
-
-  const [languageValue, setLanguageValue] = useState("uz");
+  const currentLanguage = i18n.language;
+  const [languageValue, setLanguageValue] = useState(currentLanguage);
   const [languageSelectIsOpen, setLanguageSelectIsOpen] = useState(false)
 
   const handleChangeLang = (value) => {
